@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2rem 0 0 0;
+    font-family: sans-serif;
+    background-color: #f3f3f3;
+}
+
+main{
+    margin-bottom: 2rem;
+}
+ul {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+
+}
+
+#nav-bar{
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: #f1c40f;
+    width: 100%;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+}
+
+.titulo1 {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+
+form input,
+form h3 input {
+    outline: none;
+    margin-bottom: 1rem;
+    border: none ;
+    border-radius: 2px;
+    height: 2rem;
+    padding: .5rem;
+}
+
+#submit {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #f1c40f;
+    height: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    transition: background-color 1s
+}
+
+#submit:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+
+
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.cuadros {
+    gap: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+
+}
+
+.recuadro {
+    border: 1px grey solid;
+}
+
+.title-card {
+    background-color: grey;
+    text-align: center;
+    padding: 1rem;
+}
+
+.body-card {
+    line-height: 2rem;
+    text-align: center;
+    margin: 0 2rem
+}
+
+.card-footer {
+    display: flex;
+    padding: .5rem 0;
+}
+
+footer {
+    background-color: gainsboro;
+    max-width: 762px;
+    padding: 0;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+
+}
+
+footer ul {
+    display: flex;
+    justify-content: end;
+    gap: 19px padding-bottom:.5rem,
+}
+
+.copi {
+    display: flex;
+    justify-content: end;
+}
+
+/* MQ MOBILE  */
+@media (max-width: 576px) {
+    #header-img {
+        display: none;
+    }
+
+    video {
+        width: 300px;
+    }
+
+    .cuadros {
+        flex-direction: column;
+    }
+
+    footer {
+        background-color: gainsboro;
+        max-width: 230px;
+
+    }
+}
